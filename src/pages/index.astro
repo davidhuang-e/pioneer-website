@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+const t = {
+  title: '株式会社パイオニア',
+  subtitle: '信頼される革新のパートナー',
+  content: '私たちは、さまざまな業界に高品質なサービスとソリューションを提供することに尽力しています。'
+}
+---
+<Layout>
+  <h1>{t.title}</h1>
+  <h2>{t.subtitle}</h2>
+  <p>{t.content}</p>
+  <p style="margin-top:2rem;">
+    言語を選択：
+    <a href="/en/">English</a> | <a href="/zh/">中文</a>
+  </p>
+</Layout>
