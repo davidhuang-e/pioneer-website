@@ -1,5 +1,5 @@
 {
-  "name": "pioneer-website",
+  "name": "astro-multilang-site",
   "type": "module",
   "scripts": {
     "dev": "astro dev",
