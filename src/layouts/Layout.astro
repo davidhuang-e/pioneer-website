@@ -1,15 +1,21 @@
+
 ---
-export interface Props {
-  title: string;
-}
-const { title } = Astro.props;
+const { lang } = Astro.props;
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 ---
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
-    <title>{title}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pioneer Corporation</title>
+    <link rel="icon" href="/assets/favicon.ico" />
   </head>
   <body>
-    <slot />
+    <Header lang={lang} />
+    <main>
+      <slot />
+    </main>
+    <Footer />
   </body>
 </html>
