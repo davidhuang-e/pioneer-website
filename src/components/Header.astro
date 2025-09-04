@@ -1,0 +1,19 @@
+
+---
+const { lang } = Astro.props;
+const navLinks = {
+  ja: { home: "/", services: "/ja/services", contact: "/ja/contact" },
+  en: { home: "/en", services: "/en/services", contact: "/en/contact" },
+  zh: { home: "/zh", services: "/zh/services", contact: "/zh/contact" }
+};
+---
+<header>
+  <nav>
+    <a href={navLinks[lang].home}>ホーム / Home / 首页</a> |
+    <a href={navLinks[lang].services}>サービス / Services / 服务</a> |
+    <a href={navLinks[lang].contact}>お問い合わせ / Contact / 联系我们</a>
+    <div style="float:right;">
+      <a href="/ja">🇯🇵</a> <a href="/en">🇬🇧</a> <a href="/zh">🇨🇳</a>
+    </div>
+  </nav>
+</header>
